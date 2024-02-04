@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 200, 300, 400, 500, 600, 700, 800,900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+section {
+
+    display: flex;
+justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(bg.jpg);
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed; padding: 50px;
+
+
+ }
+
+
+
+.container{
+position: relative;
+width: calc(100% - 100px);
+min-height: calc(100h - 580px);
+min-height: 450px;
+background: rgba(255,255,255,0.5);
+box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+border-radius: 20px;
+display: flex;
+justify-content:space-between; 
+align-items: center;
+padding: 50px;
+
+}
+
+
+.tag-1 {
+    background-color:#fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition-duration: 0.4s;
+}
+.color-green-900:hover {
+    transform: scale(1.1); 
+    background-color: #b32d48;
+    color: #eef4f5;
+    
+}
+.bg-6 {
+    background-color: #eef4f5;
+}
+.color-green-900 {
+    color: #8d0722;
+}
+.content{
+    transform: translate(-100px);
+    max-width: 700px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.01);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    padding: 20px;
+    padding-left: 110px;
+}
+.content h3{
+    font-size: 1.5em;
+    color:#8a2435;
+   
+}
+.content p{
+    font-size: 1em;
+    color :#8a2435;
+    margin: 2px;
+    padding: 5px
+}
+
+.imgbx img{
+    max-width: 100%; 
+    display: block;
+    cursor: pointer;
+    border-radius: 18px;
+    animation: animate 4s linear infinite;
+
+}
+
+@keyframes animate {
+    0%,100%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(35px);
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    
+
+section{
+    min-height: 200vh;
+   
+    padding: 20px;
+
+    }
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        width: calc(100% - 100px);
+min-height: calc(100h - 580px);
+min-height: 450px;
+    }
+
+    .content {
+        transform: translate(-30px);
+    max-width: 700px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+    line-height: 28px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.01);
+    padding: 10px;
+    }
+    .tag-1{
+        padding-right: 1px;
+        margin-top: 15px;
+        padding-left: 3px;
+    }
+    .color-green-900:hover {
+        transform: scale(1.1); 
+        background-color: #b32d48;
+        color: #eef4f5;
+        
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    
+
+    section{
+        min-height: 200vh;
+        
+        padding: 20px;
+    
+        }
+        .container {
+            flex-direction: column;
+            align-items: stretch;
+            width: calc(150% - 20px);
+    min-height: calc(100h - 680px);
+    min-height: 450px;
+    display: block;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.01);
+        }
+    
+        .content {
+            transform: translate(-50px);
+            width: calc(154% - 20px);
+            padding-left: 5px;
+             padding-right: 5px; 
+            font-size: 20px;
+        line-height: 28px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.01);
+        padding: 10px;
+        }.content h3{
+            font-size: 25px;
+    line-height: 40px;
+            color:#8a2435;
+            padding: 10px;
+        }
+        .content p{
+            font-size: 20px;
+    line-height: 28px;
+    margin: 14px
+        }
+        .content h3{
+            font-size: 25px;
+    line-height: 40px;
+            color:#8a2435;
+            padding: 10px;
+        }
+        .tag-1{
+            padding-right: 13px;
+            margin-top: 15px;
+            padding-left: 3px;
+            font-size: 11px;
+            padding-left: 14px;
+        }
+        .color-green-900:hover {
+            transform: scale(1.1); 
+            background-color: #b32d48;
+            color: #eef4f5;
+            
+        }
+
+
+
+    }
